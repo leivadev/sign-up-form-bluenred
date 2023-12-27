@@ -61,9 +61,13 @@ main {
     main {
         display: flex;
         flex: 1;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
+        margin-left: 13.5rem;
+    }
+
+    .sign-up-header {
+        margin-top: 5rem;
     }
 
     .sign-up-header h1 {
