@@ -26,6 +26,24 @@ main {
     color: #637381;
 }
 
+.form-container {
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.form-double {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .btn-row {
     margin-top: 1.5rem;
     display: flex;
