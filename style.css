@@ -106,9 +106,9 @@ main {
     main {
         display: flex;
         flex: 1;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-        margin-left: 13.5rem;
     }
 
     .sign-up-header {
