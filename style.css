@@ -42,6 +42,12 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 1rem;
+}
+
+.grow-container {
+    flex: 1;
+    min-width: 10rem;
 }
 
 .btn-submit {
