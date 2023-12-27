@@ -50,6 +50,31 @@ main {
     min-width: 10rem;
 }
 
+.phone-country-container {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+#user_cellphone {
+    padding-left: 1rem;
+    flex: 1;
+    border: none;
+}
+
+.phone-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-right: 1px solid var(--border-color);
+}
+
+.phone-image img {
+    height: 1rem;
+}
+
 .btn-submit {
     margin-top: 1rem;
 }
