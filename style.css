@@ -31,34 +31,6 @@ main {
     margin-bottom: 1.5rem;
 }
 
-.form-container {
-    margin-bottom: 2rem;
-}
-
-.form-row {
-    margin-bottom: 1rem;
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.form-row input[type='text'],
-.form-row input[type='email'],
-.form-row select {
-    background-color: #fff;
-    border: 1px solid --grayRNB;
-    border-radius: 0.5rem;
-    padding: 4px;
-}
-
-.full-name {
-    flex-direction: row;
-    flex-grow: 1;
-    gap: 3rem;
-}
-
 .bluenred-image {
     background-image: url(/img/fakeLogo.png);
     height: 30px;
