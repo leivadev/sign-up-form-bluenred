@@ -3,8 +3,8 @@
 :root {
     --redBNR: #e00021;
     --blueBNR: #006ef2;
-    --grayRNB: #6e6e78;
-    --grayRNB2: #4d4d4d;
+    --grayBNR: #f1f1f1;
+    --border-color: rgba(145, 158, 171, 0.32);
 }
 
 *,
@@ -18,12 +18,39 @@
 body {
     background-color: #fff;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
-    padding: 0 1.5rem 1.5rem;
+    padding: 0 1.5rem;
     line-height: 1.5;
 }
 
 main {
     color: #637381;
+}
+
+.btn-row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 2.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.btn-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.btn-container:hover {
+    background-color: var(--grayBNR);
 }
 
 .sign-up-header {
