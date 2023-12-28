@@ -2,7 +2,9 @@
 
 :root {
     --redBNR: #e00021;
+    --orangeBNR: #e07700;
     --blueBNR: #006ef2;
+    --greenBNR: #00f220;
     --grayBNR: #f1f1f1;
     --border-color: rgba(145, 158, 171, 0.32);
 }
@@ -60,6 +62,21 @@ main {
     border-radius: 0.5rem;
     font-size: 1rem;
     width: 100%;
+}
+
+input[type="email"]:valid,
+input[type=tel]:valid {
+    border: 1px solid var(--greenBNR);
+}
+
+input[type="email"]:invalid,
+input[type=tel]:invalid {
+    border: 1px solid var(--orangeBNR);
+}
+
+input[type="email"]:focus,
+input[type=tel]:focus {
+    border: 2px solid var(--border-color);
 }
 
 .btn-submit {
