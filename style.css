@@ -56,7 +56,8 @@ main {
 .form-container input[type=email],
 .form-container input[type=password],
 .form-container input[type=tel],
-.form-container select {
+.form-container select,
+.radio-label {
     padding: 0.75rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
@@ -72,6 +73,21 @@ input[type=tel]:valid {
 input[type="email"]:focus,
 input[type=tel]:focus {
     border: 2px solid var(--border-color);
+}
+
+.radio-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.radio-label:has(input:checked) {
+    border: 2px solid var(--redBNR);
+}
+
+.form-container input[type=radio] {
+    justify-self: flex-end;
 }
 
 .terms-container a,
