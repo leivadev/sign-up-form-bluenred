@@ -197,6 +197,10 @@ footer p {
         flex-direction: column;
     }
 
+    .form-section {
+        max-width: 500px;
+    }
+
     .sign-up-header {
         margin-top: 5rem;
     }
