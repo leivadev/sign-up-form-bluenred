@@ -24,17 +24,17 @@
                     <div class="form-row form-double">
                         <div class="grow-container">
                             <label for="first_name">Nombre</label>
-                            <input type="text" placeholder="Nombre *" required>
+                            <input type="text" placeholder="Nombre" required>
                         </div>
                         <div class="grow-container">
-                            <label for="last_name">Apellido</label>
-                            <input type="text" placeholder="Apellido *" required>
+                            <label for="last_name">Apellido *</label>
+                            <input type="text" placeholder="Apellido" required>
                         </div>
                     </div>
                     <div class="form-row form-double">
                         <div class="grow-container">
-                            <label for="user_email">Correo Electrónico</label>
-                            <input type="email" name="user_email" id="user_email" placeholder="Correo Electrónico *"
+                            <label for="user_email">Correo Electrónico *</label>
+                            <input type="email" name="user_email" id="user_email" placeholder="example@domain.com"
                                 required>
                         </div>
                         <div class="grow-container">
@@ -45,9 +45,9 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <div class="form-row form-double">
-                        <select name="como-nos-conociste" id="como-nos-conociste" placeholder="Cómo nos conociste?"
-                            required>
+                    <div class="form-row">
+                        <label for="como-nos-conociste">¿Cómo nos conociste?</label>
+                        <select name="como-nos-conociste" id="como-nos-conociste" required>
                             <option value="facebook">Facebook</option>
                             <option value="google">Google</option>
                             <option value="instagram">Instagram</option>
@@ -59,35 +59,47 @@
                         </select>
                     </div>
                     <div class="form-row form-double">
-                        <select class="grow-container" name="provincia" id="provincia" required>
-                            <option value="bocas-del-toro">Bocas del Toro</option>
-                            <option value="cocle">Coclé</option>
-                            <option value="colon">Colón</option>
-                            <option value="chiriqui">Chiriquí</option>
-                            <option value="darien">Darién</option>
-                            <option value="herrera">Herrera</option>
-                            <option value="los-santos">Los Santos</option>
-                            <option value="panama">Panamá</option>
-                            <option value="panama-oeste">Panamá Oeste</option>
-                            <option value="veraguas">Veraguas</option>
-                        </select>
-                        <input class="grow-container" type="text" name="city" id="city" placeholder="Ciudad *" required>
+                        <div class="grow-container">
+                            <label for="provincia">Provincia</label>
+                            <select name="provincia" id="provincia" required>
+                                <option value="bocas-del-toro">Bocas del Toro</option>
+                                <option value="cocle">Coclé</option>
+                                <option value="colon">Colón</option>
+                                <option value="chiriqui">Chiriquí</option>
+                                <option value="darien">Darién</option>
+                                <option value="herrera">Herrera</option>
+                                <option value="los-santos">Los Santos</option>
+                                <option value="panama">Panamá</option>
+                                <option value="panama-oeste">Panamá Oeste</option>
+                                <option value="veraguas">Veraguas</option>
+                            </select>
+                        </div>
+                        <div class="grow-container">
+                            <label for="city">Ciudad *</label>
+                            <input type="text" name="city" id="city" placeholder="Ciudad" required>
+                        </div>
                     </div>
                     <div class="form-row form-double">
-                        <select class="grow-container" name="tipo-cuenta" id="tipo-cuenta" required>
-                            <option value="personal">Personal</option>
-                            <option value="empresarial">Empresarial</option>
-                        </select>
-                        <select class="grow-container" name="sucursal" id="sucursal" required>
-                            <option value="lassonde">Lassonde</option>
-                            <option value="francisco_clark">Francisco Clark</option>
-                            <option value="boquete">Boquete</option>
-                            <option value=calle_5ta"">Calle 5ta</option>
-                            <option value="bugaba">Bugaba</option>
-                            <option value="isla_colon">Isla Colón</option>
-                            <option value="chitre">Chitré</option>
-                            <option value="changuinola">Changuinola</option>
-                        </select>
+                        <div class="grow-container">
+                            <label for="tipo-cuenta">Tipo de cuenta</label>
+                            <select name="tipo-cuenta" id="tipo-cuenta" required>
+                                <option value="personal">Personal</option>
+                                <option value="empresarial">Empresarial</option>
+                            </select>
+                        </div>
+                        <div class="grow-container">
+                            <label for="sucursal">Sucursal</label>
+                            <select name="sucursal" id="sucursal" required>
+                                <option value="lassonde">Lassonde</option>
+                                <option value="francisco_clark">Francisco Clark</option>
+                                <option value="boquete">Boquete</option>
+                                <option value=calle_5ta"">Calle 5ta</option>
+                                <option value="bugaba">Bugaba</option>
+                                <option value="isla_colon">Isla Colón</option>
+                                <option value="chitre">Chitré</option>
+                                <option value="changuinola">Changuinola</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <div class="form-container form-double">
