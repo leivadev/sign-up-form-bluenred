@@ -176,6 +176,18 @@ footer p {
     font-size: 1rem;
 }
 
+@media only screen and (max-width: 425px) {
+
+    .form-row,
+    .form-container input[type=text],
+    .form-container input[type=email],
+    .form-container input[type=password],
+    .form-container input[type=tel],
+    .form-container select {
+        font-size: 0.75rem;
+    }
+}
+
 @media only screen and (min-width: 769px) {
 
     body {
@@ -202,6 +214,14 @@ footer p {
 
     .sign-up-header h1 {
         font-size: 1.5rem;
+    }
+
+    .btn-row {
+        gap: 1rem;
+    }
+
+    .btn-container {
+        height: 3rem;
     }
 
     .image-aside {
