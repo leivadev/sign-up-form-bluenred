@@ -69,11 +69,6 @@ input[type=tel]:valid {
     border: 1px solid var(--greenBNR);
 }
 
-input[type="email"]:invalid,
-input[type=tel]:invalid {
-    border: 1px solid var(--orangeBNR);
-}
-
 input[type="email"]:focus,
 input[type=tel]:focus {
     border: 2px solid var(--border-color);
