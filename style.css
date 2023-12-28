@@ -79,6 +79,20 @@ input[type=tel]:focus {
     border: 2px solid var(--border-color);
 }
 
+.terms-container a,
+.log-in-container a {
+    font-weight: 700;
+    color: #c0001d;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.log-in-container {
+    padding-top: 1rem;
+}
+
 .btn-submit {
     margin-top: 1rem;
 }
@@ -161,10 +175,6 @@ footer {
 footer a,
 footer p {
     color: #202020;
-}
-
-footer a:hover {
-    text-decoration: none;
 }
 
 footer p {
