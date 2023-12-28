@@ -29,7 +29,7 @@ main {
 }
 
 .form-container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .form-row {
@@ -37,7 +37,7 @@ main {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 1rem;
+    margin-bottom: 0.25rem;
 }
 
 .form-double {
