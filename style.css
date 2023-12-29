@@ -70,7 +70,7 @@ main {
     -webkit-appearance: none;
     -moz-appearance: none;
     background: transparent;
-    background-image: url(/img/drop_down_arrow.svg);
+    background-image: url(img/drop_down_arrow.svg);
     background-repeat: no-repeat;
     background-position-x: 97.75%;
     background-position-y: 1.1rem;
@@ -242,7 +242,7 @@ a:hover {
 }
 
 .bluenred-image {
-    background-image: url(/img/fakeLogo.png);
+    background-image: url(img/fakeLogo.png);
     height: 30px;
     width: 140px;
     background-repeat: no-repeat;
