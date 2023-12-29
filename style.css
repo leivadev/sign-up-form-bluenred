@@ -110,6 +110,15 @@ input[type='radio']:checked:after {
     height: 100%;
 }
 
+.tarifa-description {
+    padding: 0.5rem 0 1rem;
+}
+
+.tarifa-description i {
+    color: var(--redBNR);
+    padding-right: 0.5rem;
+}
+
 .terms-container a,
 .log-in-container a {
     font-weight: 700;
