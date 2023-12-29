@@ -66,16 +66,6 @@ main {
     width: 100%;
 }
 
-input[type="email"]:valid,
-input[type=tel]:valid {
-    border: 1px solid var(--greenBNR);
-}
-
-input[type="email"]:focus,
-input[type=tel]:focus {
-    border: 2px solid var(--border-color);
-}
-
 .radio-label {
     display: flex;
     align-items: center;
@@ -90,8 +80,11 @@ input[type=tel]:focus {
     text-align: center;
 }
 
+.form-container input:focus,
+.form-container select:focus-visible,
 .radio-label:has(input:checked) {
-    border: 2px solid var(--redBNR);
+    border: 1px solid var(--redBNR);
+    outline-color: var(--redBNR);
 }
 
 input[type='radio']:after,
