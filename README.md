@@ -1,1 +1,35 @@
 # Sign-up Form - BluenRed
+
+![Project Preview](img/luislev.github.io_sign-up-form-bluenred_.png)
+
+> [!NOTE]
+> Application is still under Development
+
+### [Try the demo!](https://luislev.github.io/sign-up-form-bluenred/)
+
+## 📃 About the project
+Hey there!👋🏼 This is a sign-up form project taking inspiration from [RednBlue sign-up](https://portal.rednbluepty.com/registrate) and encouraged by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
+
+## 🔧 Built with
+
+ - HTML
+ - CSS
+ - JavaScript
+ - Font Awesome
+
+## 📖 What I learned
+ - Understanding the fundamental elements of form design
+ - Responsive Design using the Mobile-First Design
+ - Basics of UI/UX Design
+
+## License
+
+    Distributed under the MIT License.
+
+## Author
+
+### Luis Leiva - Software Developer from Panama
+
+<a href="https://www.github.com/luislev" target="_blank" rel="noreferrer"><img src="https://img.shields.io/badge/Github-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=101010"/></a>
+<a href="https://www.linkedin.com/in/luisleivadev" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=101010"/></a>
+<a href="https://www.x.com/luisleivadev" target="_blank" rel="noreferrer"> <img src="https://img.shields.io/badge/Twitter-000000?style=for-the-badge&logo=X&logoColor=white&labelColor=101010"/></a>
