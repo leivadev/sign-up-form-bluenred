@@ -31,46 +31,24 @@ const cellphoneError = document.getElementById('cellphone-error');
 const cityError = document.getElementById('city-error');
 
 firstName.addEventListener("input", function (e) {
-    if (firstName.value === '') {
-        firstNameError.textContent = 'Escribe tu nombre.';
-    } else {
-        firstNameError.textContent = '';
-    }
+    firstNameError.textContent = firstName.value === '' ? 'Escribe tu nombre.' : null;
 });
 
 lastname.addEventListener("input", function (e) {
-    if (lastname.value === '') {
-        lastnameError.textContent = 'Escribe tu apellido.';
-    } else {
-        lastnameError.textContent = '';
-    }
+    lastnameError.textContent = lastname.value === '' ? 'Escribe tu apellido.' : null;
 });
 
 email.addEventListener("input", function (e) {
-    if (email.validity.typeMismatch) {
-        emailError.textContent = 'Ingrese un correo electrónico válido.';
-    } else {
-        emailError.textContent = '';
-    }
+    emailError.textContent = email.validity.typeMismatch ? 'Ingrese un correo electrónico válido.' : null;
 });
 
 cellphone.addEventListener("input", function (e) {
-    if (cellphone.validity.patternMismatch) {
-        cellphoneError.textContent = 'Ingrese un número de celular de 8 dígitos.';
-    } else {
-        cellphoneError.textContent = '';
-    }
+    cellphoneError.textContent = cellphone.validity.patternMismatch ? 'Ingrese un número celular de 8 dígitos' : null;
 });
 
 city.addEventListener('input', function (e) {
-    if (city.value === '') {
-        cityError.textContent = 'Ingrese la ciudad donde reside actualmente.'
-    } else {
-        cityError.textContent = '';
-    }
+    cityError.textContent = city.value === '' ? 'Ingrese la ciudad donde reside actualmente.' : null;
 })
-
-
 
 //password match
 
