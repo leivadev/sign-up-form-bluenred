@@ -119,6 +119,47 @@ input[type='radio']:checked:after {
     padding-right: 0.5rem;
 }
 
+input[type=checkbox] {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.terms-container label {
+    position: relative;
+    cursor: pointer;
+}
+
+.terms-container label:before {
+    position: relative;
+    content: '';
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: 2px solid var(--redBNR);
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.terms-container input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 0.5rem;
+    height: 1rem;
+    border: solid var(--redBNR);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
 .terms-container a,
 .log-in-container a {
     font-weight: 700;
