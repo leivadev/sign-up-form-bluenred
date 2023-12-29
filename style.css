@@ -66,6 +66,12 @@ main {
     width: 100%;
 }
 
+.error {
+    font-size: 0.75rem;
+    color: #e77c51;
+    font-weight: 500;
+}
+
 .form-row select {
     -webkit-appearance: none;
     -moz-appearance: none;
