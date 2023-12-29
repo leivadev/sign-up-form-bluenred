@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Condensed&display=swap');
 
 :root {
     --redBNR: #e00021;
@@ -26,6 +26,20 @@ body {
 
 main {
     color: #637381;
+}
+
+.bluenred-title {
+    margin-bottom: 2.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: #1c2122;
+}
+
+.sign-up-header h1 {
+    color: #000;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .form-container {
@@ -247,20 +261,6 @@ a:hover {
     margin-bottom: 1.5rem;
 }
 
-.bluenred-image {
-    background-image: url(img/fakeLogo.png);
-    height: 30px;
-    width: 140px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-bottom: 2.5rem;
-}
-
-.sign-up-header h1 {
-    color: #000;
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-}
 
 .image-aside {
     display: none;
