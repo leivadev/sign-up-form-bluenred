@@ -66,6 +66,21 @@ main {
     width: 100%;
 }
 
+.form-row select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url(/img/drop_down_arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 97.75%;
+    background-position-y: 1.1rem;
+}
+
+.form-double select {
+    background-position-x: 95%;
+}
+
+
 .radio-label {
     display: flex;
     align-items: center;
