@@ -77,17 +77,43 @@ input[type=tel]:focus {
 
 .radio-label {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: space-evenly;
     font-weight: 600;
+    padding: 0;
+}
+
+.radio-label label {
+    width: 80%;
+    padding: 0.75rem 1rem;
+    text-align: center;
 }
 
 .radio-label:has(input:checked) {
     border: 2px solid var(--redBNR);
 }
 
+input[type='radio']:after,
+input[type='radio']:checked:after {
+    position: relative;
+    width: 1.25rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    top: 0.9rem;
+    left: -0.25rem;
+    background-color: white;
+    content: '';
+    display: inline-block;
+    border: 2px solid var(--grayBNR);
+}
+
+input[type='radio']:checked:after {
+    background-color: var(--redBNR);
+    border: 2px solid #c0001d;
+}
+
 .form-container input[type=radio] {
-    justify-self: flex-end;
+    height: 100%;
 }
 
 .terms-container a,
@@ -213,6 +239,12 @@ footer p {
     .form-container select {
         font-size: 0.75rem;
     }
+
+    input[type='radio']:after,
+    input[type='radio']:checked:after {
+        top: 1.65rem;
+    }
+
 }
 
 @media only screen and (min-width: 769px) {
