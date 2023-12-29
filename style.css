@@ -209,7 +209,6 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 3rem 0 1.5rem;
-    font-weight: 600;
 }
 
 footer a,
@@ -218,7 +217,12 @@ footer p {
 }
 
 footer p {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+footer i {
+    padding-right: 0.5rem;
 }
 
 @media only screen and (max-width: 376px) {
