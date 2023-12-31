@@ -5,23 +5,25 @@
 > [!NOTE]
 > Application is still under Development
 
-### [Try the demo!](https://luislev.github.io/sign-up-form-bluenred/)
+## [Try the demo!](https://luislev.github.io/sign-up-form-bluenred/)
 
 ## 📃 About the project
+
 Hey there!👋🏼 This is a sign-up form project taking inspiration from [RednBlue sign-up](https://portal.rednbluepty.com/registrate) and encouraged by [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form).
 
 ## 🔧 Built with
 
- - HTML
- - CSS
- - JavaScript
- - Font Awesome
+- HTML
+- CSS
+- JavaScript
+- Font Awesome
 
 ## 📖 What I learned
- - Understanding the fundamental elements of form design and validations.
- - Responsive Design using the Mobile-First Design.
- - Dark & light theme switcher.
- - Basics of UI/UX Design.
+
+- Understanding the fundamental elements of form design and validations.
+- Responsive Design using the Mobile-First Design.
+- Dark & light theme switcher.
+- Basics of UI/UX Design.
 
 ## License
 
