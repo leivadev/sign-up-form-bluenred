@@ -6,7 +6,7 @@ const tarifaTypeTwo = document.getElementById('weight-type-2');
 const paragraphContainer = document.querySelector('.tarifa-description');
 const firstParagraph = paragraphContainer.innerHTML;
 const radioLabel = document.querySelectorAll('.radio-label');
-const secondParagraph = '<i class="fa-solid fa-circle-info"></i>Tarifa de $3.00 por libra real.';
+const secondParagraph = '<i class="fa-solid fa-circle-info"></i>$3.00 fee per real pound.';
 
 function toggleChecked() {
     paragraphContainer.innerHTML = !tarifaTypeOne.checked ? secondParagraph : firstParagraph;
@@ -31,23 +31,23 @@ const cellphoneError = document.getElementById('cellphone-error');
 const cityError = document.getElementById('city-error');
 
 firstName.addEventListener("input", function (e) {
-    firstNameError.textContent = firstName.value === '' ? 'Escribe tu nombre.' : null;
+    firstNameError.textContent = firstName.value === '' ? 'Enter your first name.' : null;
 });
 
 lastname.addEventListener("input", function (e) {
-    lastnameError.textContent = lastname.value === '' ? 'Escribe tu apellido.' : null;
+    lastnameError.textContent = lastname.value === '' ? 'Enter your last name.' : null;
 });
 
 email.addEventListener("input", function (e) {
-    emailError.textContent = email.validity.typeMismatch ? 'Ingrese un correo electrónico válido.' : null;
+    emailError.textContent = email.validity.typeMismatch ? 'Enter a valid email.' : null;
 });
 
 cellphone.addEventListener("input", function (e) {
-    cellphoneError.textContent = cellphone.validity.patternMismatch ? 'Ingrese un número celular de 8 dígitos' : null;
+    cellphoneError.textContent = cellphone.validity.patternMismatch ? 'Enter an 8 digit number cellphone.' : null;
 });
 
 city.addEventListener('input', function (e) {
-    cityError.textContent = city.value === '' ? 'Ingrese la ciudad donde reside actualmente.' : null;
+    cityError.textContent = city.value === '' ? 'Enter the city where you currently reside.' : null;
 })
 
 //password match
@@ -67,15 +67,15 @@ password.addEventListener('input', function (e) {
         if (regExpCapitalLetter.test(currentValue)) {
             result += '';
         } else {
-            result += 'Falta al menos 1 letra mayúscula.<br>';
+            result += 'Missing at least 1 capital letter.<br>';
         }
         if (regExpDigits.test(currentValue)) {
             result += '';
         } else {
-            result += 'Falta al menos 1 número.<br>';
+            result += 'Missing at least 1 number.<br>';
         }
         if (currentValue.length < 9) {
-            result += 'La contraseña debe tener al menos 8 caracteres.<br>';
+            result += 'Must be at least 8 characters.<br>';
         } else {
             result += '';
         }
@@ -86,9 +86,7 @@ password.addEventListener('input', function (e) {
 });
 
 confirmPassword.addEventListener('input', function (e) {
-    confirmPasswordError.textContent = (confirmPassword.value !== password.value) ? 'Las contraseñas no coinciden' : null;
+    confirmPasswordError.textContent = (confirmPassword.value !== password.value) ? 'Passwords do not match.' : null;
 });
-
-// Language Toggle
 
 //Dark and light mode
