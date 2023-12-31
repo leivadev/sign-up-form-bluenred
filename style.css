@@ -135,6 +135,7 @@ main {
     background-repeat: no-repeat;
     background-position-x: 97.75%;
     background-position-y: 1.1rem;
+    cursor: pointer;
 }
 
 .form-double select {
@@ -148,6 +149,7 @@ main {
     justify-content: space-evenly;
     font-weight: 600;
     padding: 0;
+    cursor: pointer;
 }
 
 .radio-label label {
@@ -392,6 +394,7 @@ footer i {
     input[type='radio']:checked:after {
         top: -0.2rem;
     }
+
 
 }
 
