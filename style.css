@@ -1,16 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Condensed&display=swap');
 
-:root {
-    --purpleBNR: #9000f2;
-    --purpleContrastBNR: #6900c5;
-    --blueBNR: #006ef2;
+
+[data-theme='light'] {
+    --primaryBNR: #9000f2;
+    --primaryContrastBNR: #6900c5;
+    --anchorBNR: #7906c3;
     --errorBNR: #e00021;
     --validBNR: #1cf200;
-    --whiteBNR: #fff;
-    --hoverWhiteBNR: #f1f1f1;
-    --blackBNR: #202020;
+    --bg-colorBNR: #fbf3ff;
+    --bg-hoverBNR: #f5e3ff;
+    --textBNR: #202020;
     --titleBNR: #1c2122;
     --greyBNR: #637381;
+    --border-color: rgba(145, 158, 171, 0.32);
+}
+
+[data-theme='dark'] {
+    --primaryBNR: #64079c;
+    --primaryContrastBNR: #440076;
+    --anchorBNR: #a30fff;
+    --errorBNR: #e00021;
+    --validBNR: #1cf200;
+    --bg-colorBNR: #1C1C1E;
+    --bg-hoverBNR: #434347;
+    --textBNR: #f1f1f1;
+    --titleBNR: #ffffff;
+    --greyBNR: #a6b2ba;
     --border-color: rgba(145, 158, 171, 0.32);
 }
 
@@ -23,7 +38,7 @@
 }
 
 body {
-    background-color: var(--whiteBNR);
+    background-color: var(--bg-colorBNR);
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto;
     padding: 0 1.5rem;
     line-height: 1.5;
@@ -42,7 +57,7 @@ main {
 }
 
 .sign-up-header h1 {
-    color: var(--blackBNR);
+    color: var(--textBNR);
     font-size: 1.25rem;
     margin-bottom: 0.5rem;
 }
@@ -80,7 +95,8 @@ main {
     padding: 0.75rem 1rem;
     border: 1px solid var(--border-color);
     border-radius: 0.5rem;
-    background-color: var(--whiteBNR);
+    background-color: var(--bg-colorBNR);
+    color: var(--textBNR);
     font-size: 1rem;
     width: 100%;
 }
@@ -123,8 +139,8 @@ main {
 .form-container input:focus,
 .form-container select:focus-visible,
 .radio-label:has(input:checked) {
-    border: 1px solid var(--purpleBNR);
-    outline-color: var(--purpleBNR);
+    border: 1px solid var(--primaryBNR);
+    outline-color: var(--primaryBNR);
 }
 
 input[type='radio']:after,
@@ -135,15 +151,15 @@ input[type='radio']:checked:after {
     border-radius: 1.25rem;
     top: -0.25rem;
     left: -0.2rem;
-    background-color: var(--whiteBNR);
+    background-color: var(--bg-colorBNR);
     content: '';
     display: inline-block;
-    border: 2px solid var(--hoverWhiteBNR);
+    border: 2px solid var(--bg-hoverBNR);
 }
 
 input[type='radio']:checked:after {
-    background-color: var(--purpleBNR);
-    border: 2px solid var(--purpleContrastBNR);
+    background-color: var(--primaryBNR);
+    border: 2px solid var(--primaryContrastBNR);
 }
 
 .form-container input[type=radio] {
@@ -155,7 +171,7 @@ input[type='radio']:checked:after {
 }
 
 .tarifa-description i {
-    color: var(--purpleBNR);
+    color: var(--primaryBNR);
     padding-right: 0.5rem;
 }
 
@@ -178,7 +194,7 @@ input[type=checkbox] {
     content: '';
     -webkit-appearance: none;
     background-color: transparent;
-    border: 2px solid var(--purpleBNR);
+    border: 2px solid var(--primaryBNR);
     border-radius: 0.25rem;
     padding: 0.75rem;
     display: inline-block;
@@ -195,7 +211,7 @@ input[type=checkbox] {
     left: 10px;
     width: 0.5rem;
     height: 1rem;
-    border: solid var(--purpleBNR);
+    border: solid var(--primaryBNR);
     border-width: 0 2px 2px 0;
     transform: rotate(45deg);
 }
@@ -203,7 +219,7 @@ input[type=checkbox] {
 .terms-container a,
 .log-in-container a {
     font-weight: 700;
-    color: var(--purpleContrastBNR);
+    color: var(--anchorBNR);
 }
 
 a:hover {
@@ -222,8 +238,8 @@ a:hover {
     width: 100%;
     font-size: 1rem;
     font-weight: bold;
-    color: var(--whiteBNR);
-    background-color: var(--purpleBNR);
+    color: #f1f1f1;
+    background-color: var(--primaryBNR);
     border: none;
     border-radius: 0.5rem;
     padding: 0.75rem;
@@ -231,7 +247,7 @@ a:hover {
 }
 
 .btn-submit button:hover {
-    background-color: var(--purpleContrastBNR);
+    background-color: var(--primaryContrastBNR);
 }
 
 .btn-row {
@@ -258,7 +274,7 @@ a:hover {
 }
 
 .btn-container:hover {
-    background-color: var(--hoverWhiteBNR);
+    background-color: var(--bg-hoverBNR);
 }
 
 .sign-up-header {
@@ -280,7 +296,7 @@ footer {
 
 footer a,
 footer p {
-    color: var(--blackBNR);
+    color: var(--textBNR);
 }
 
 footer p {
@@ -391,7 +407,7 @@ footer i {
         height: 11rem;
         width: 40%;
         bottom: 0;
-        color: var(--whiteBNR);
+        color: #f1f1f1;
         background: linear-gradient(180deg, transparent, rgba(15, 15, 15, .6) 40%);
     }
 
