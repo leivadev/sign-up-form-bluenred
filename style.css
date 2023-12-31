@@ -153,7 +153,7 @@ main {
 }
 
 .radio-label label {
-    width: 80%;
+    width: 70%;
     padding: 0.75rem 1rem;
     text-align: center;
 }
@@ -377,6 +377,7 @@ footer i {
     .grow-container {
         min-width: 8rem;
     }
+
 }
 
 @media only screen and (max-width: 425px) {
@@ -386,7 +387,8 @@ footer i {
     .form-container input[type=email],
     .form-container input[type=password],
     .form-container input[type=tel],
-    .form-container select {
+    .form-container select,
+    .radio-label {
         font-size: 0.75rem;
     }
 
@@ -394,7 +396,6 @@ footer i {
     input[type='radio']:checked:after {
         top: -0.2rem;
     }
-
 
 }
 
@@ -488,4 +489,5 @@ footer i {
         font-weight: 400;
         line-height: 1.5;
     }
+
 }
