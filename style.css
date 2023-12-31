@@ -268,9 +268,13 @@ a:hover {
     cursor: pointer;
 }
 
-.btn-container img {
-    width: 1.5rem;
-    height: 1.5rem;
+.btn-container i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.25rem;
+    color: var(--textBNR);
 }
 
 .btn-container:hover {
