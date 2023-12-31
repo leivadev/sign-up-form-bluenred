@@ -119,3 +119,27 @@ button.addEventListener("click", () => {
 
     currentThemeSetting = newTheme;
 });
+
+// toggle password visibility
+
+const togglePassword = document.querySelector("#togglePassword");
+const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
+
+togglePassword.addEventListener("click", function () {
+    const type = password.getAttribute("type") === "password" ? "text" : "password";
+    password.setAttribute("type", type);
+
+    this.className = (type === "text" ? "fa fa-eye" : "fa fa-eye-slash");
+});
+
+toggleConfirmPassword.addEventListener("click", function () {
+    const type = confirmPassword.getAttribute("type") === "password" ? "text" : "password";
+    confirmPassword.setAttribute("type", type);
+
+    this.className = (type === "text" ? "fa fa-eye" : "fa fa-eye-slash");
+});
+
+const form = document.querySelector("form");
+form.addEventListener('submit', function (e) {
+    e.preventDefault();
+});

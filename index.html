@@ -55,15 +55,23 @@
                     </div>
                     <div class="form-row form-double">
                         <div class="grow-container">
-                            <label for="user_password">Password</label>
-                            <input type="password" name="user_password" id="user_password"
-                                pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                            <label for="user_password">Password
+                            </label>
+                            <div class="password-container">
+                                <input type="password" name="user_password" id="user_password"
+                                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                                <i class="fa fa-eye-slash" id="togglePassword"></i>
+                            </div>
                             <div id='password-error' class='error'></div>
                         </div>
                         <div class="grow-container">
-                            <label for="user_confirm_password">Confirm Password</label>
-                            <input type="password" name="user_confirm_password" id="user_confirm_password"
-                                pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                            <label for="user_confirm_password">Confirm Password
+                            </label>
+                            <div class="password-container">
+                                <input type="password" name="user_confirm_password" id="user_confirm_password"
+                                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
+                                <i class="fa fa-eye-slash" id="toggleConfirmPassword"></i>
+                            </div>
                             <div id='confirm-password-error' class='error'></div>
                         </div>
                     </div>
