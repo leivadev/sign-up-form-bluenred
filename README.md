@@ -1,6 +1,6 @@
 # Sign-up Form - BluenRed
 
-![Project Preview](img/luislev.github.io_sign-up-form-bluenred_.png)
+![Project Preview](img/luislev.github.io_sign-up-form-bluenred.png)
 
 > [!NOTE]
 > Application is still under Development
@@ -18,9 +18,10 @@ Hey there!👋🏼 This is a sign-up form project taking inspiration from [RednB
  - Font Awesome
 
 ## 📖 What I learned
- - Understanding the fundamental elements of form design
- - Responsive Design using the Mobile-First Design
- - Basics of UI/UX Design
+ - Understanding the fundamental elements of form design and validations.
+ - Responsive Design using the Mobile-First Design.
+ - Dark & light theme switcher.
+ - Basics of UI/UX Design.
 
 ## License
 
