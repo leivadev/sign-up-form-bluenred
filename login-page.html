@@ -24,41 +24,23 @@
                         <i id="icon" class="fa-solid fa-sun"></i>
                     </button>
                 </div>
-                <h1>Create your Account</h1>
+                <h1>Log-in</h1>
                 <p>
                     This is not a real online service! You know you need something like this in your life to help you
                     realize your deepest dreams.
-                    Sign up now to get started! You know you want to.</p>
+                    Enter your data below! You know you want to.</p>
             </header>
             <form action="" method="post" class="sign-up-form">
                 <div class="form-container">
-                    <div class="form-row form-double">
-                        <div class="grow-container">
-                            <label for="first_name">First Name</label>
-                            <input type="text" placeholder="First Name" id="first_name" required>
-                            <div id='first-name-error' class='error'></div>
-                        </div>
-                        <div class="grow-container">
-                            <label for="last_name">Last Name</label>
-                            <input type="text" placeholder="Last Name" id="last_name" required>
-                            <div id='last-name-error' class='error'></div>
-                        </div>
-                    </div>
-                    <div class="form-row form-double">
+                    <div class="form-row">
                         <div class="grow-container">
                             <label for="user_email">Email</label>
                             <input type="email" name="user_email" id="user_email" placeholder="example@domain.com"
                                 required>
                             <div id='email-error' class='error'></div>
                         </div>
-                        <div class="grow-container">
-                            <label for="user_cellphone">Cellphone Number</label>
-                            <input type="tel" name="user_cellphone" id="user_cellphone" placeholder="6000-0000"
-                                pattern="[0-9]{8}" required>
-                            <div id='cellphone-error' class='error'></div>
-                        </div>
                     </div>
-                    <div class="form-row form-double">
+                    <div class="form-row">
                         <div class="grow-container">
                             <label for="user_password">Password
                             </label>
@@ -69,105 +51,16 @@
                             </div>
                             <div id='password-error' class='error'></div>
                         </div>
-                        <div class="grow-container">
-                            <label for="user_confirm_password">Confirm Password
-                            </label>
-                            <div class="password-container">
-                                <input type="password" name="user_confirm_password" id="user_confirm_password"
-                                    pattern='(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}' required>
-                                <i class="fa fa-eye-slash" id="toggleConfirmPassword"></i>
-                            </div>
-                            <div id='confirm-password-error' class='error'></div>
-                        </div>
                     </div>
                 </div>
                 <div class="form-container">
-                    <div class="form-row">
-                        <label for="como-nos-conociste">¿How did you hear about us?</label>
-                        <select name="como-nos-conociste" id="como-nos-conociste" required>
-                            <option value="facebook">Facebook</option>
-                            <option value="google">Google</option>
-                            <option value="instagram">Instagram</option>
-                            <option value="radio">Radio</option>
-                            <option value="referido">Referral</option>
-                            <option value="youtube">Youtube</option>
-                            <option value="valla_publicitaria">Billboard</option>
-                            <option value="otro">Other</option>
-                        </select>
-                    </div>
-                    <div class="form-row form-double">
-                        <div class="grow-container">
-                            <label for="provincia">Province</label>
-                            <select name="provincia" id="provincia" required>
-                                <option value="bocas-del-toro">Bocas del Toro</option>
-                                <option value="cocle">Coclé</option>
-                                <option value="colon">Colón</option>
-                                <option value="chiriqui">Chiriquí</option>
-                                <option value="darien">Darién</option>
-                                <option value="herrera">Herrera</option>
-                                <option value="los-santos">Los Santos</option>
-                                <option value="panama">Panamá</option>
-                                <option value="panama-oeste">Panamá Oeste</option>
-                                <option value="veraguas">Veraguas</option>
-                            </select>
-                        </div>
-                        <div class="grow-container">
-                            <label for="user_city">City</label>
-                            <input type="text" name="user_city" id="user_city" placeholder="City" required>
-                            <div id='city-error' class='error'></div>
-                        </div>
-                    </div>
-                    <div class="form-row form-double">
-                        <div class="grow-container">
-                            <label for="tipo-cuenta">Account Type</label>
-                            <select name="tipo-cuenta" id="tipo-cuenta" required>
-                                <option value="personal">Personal</option>
-                                <option value="empresarial">Business</option>
-                            </select>
-                        </div>
-                        <div class="grow-container">
-                            <label for="sucursal">Branch</label>
-                            <select name="sucursal" id="sucursal" required>
-                                <option value="lassonde">Lassonde</option>
-                                <option value="francisco_clark">Francisco Clark</option>
-                                <option value="boquete">Boquete</option>
-                                <option value=calle_5ta"">Calle 5ta</option>
-                                <option value="bugaba">Bugaba</option>
-                                <option value="isla_colon">Isla Colón</option>
-                                <option value="chitre">Chitré</option>
-                                <option value="changuinola">Changuinola</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-                <label for="weight-type">Fee Type</label>
-                <div class="form-double">
-                    <div class="radio-label grow-container">
-                        <input id='weight-type-1' name='weight-type' type='radio' value='silver' checked />
-                        <label for="weight-type-1">Platinum One</label>
-                    </div>
-                    <div class="radio-label grow-container">
-                        <input id='weight-type-2' name='weight-type' type='radio' value='silver-one' />
-                        <label for="weight-type-2">Platinum Two</label>
-                    </div>
-                </div>
-                <p class="tarifa-description"><i class="fa-solid fa-circle-info"></i>$2.50 fee per real or volumetric
-                    pound.
-                </p>
-                <div class="form-container">
-                    <div class="terms-container">
-                        <input type="checkbox" name="terms_and_cond" id="terms_and_cond" value="terms_and_cond"
-                            required>
-                        <label for="terms_and_cond">I accept the <a href="">terms and conditions</a> and the <a
-                                href="">privacy policy</a>.</label>
-                    </div>
                     <div class="btn-submit">
-                        <button type="submit">Create Account</button>
+                        <button type="submit">Log In</button>
                     </div>
                     <div class="log-in-container">
-                        <p>Already have an account?
-                            <a href="login-page.html">
-                                Log In
+                        <p>You don't have an account?
+                            <a href="sign-up.html">
+                                Sign-up
                             </a>
                         </p>
                     </div>
@@ -198,6 +91,9 @@
             <p class="description-aside">From here, you can track your packages, check account status, and more!</p>
         </div>
     </aside>
+
 </body>
+
+<script src="script.js"></script>
 
 </html>
